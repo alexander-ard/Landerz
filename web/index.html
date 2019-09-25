@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landers</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="../assets/fonts/fonts/trueno/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+    <script type="text/javascript">
+        page.load();
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="content" class="scroll">
+    <nav>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+        <main>
+            <div class="content container-fluid">
+                <article id="home" class="light offset-top no-right-padding">
+                    <div class="flex-grid">
+                        <div class="flex-40 padding-5">
+                            <div class="row">
+                                <h1 class="mx-auto ex-bold super-title">
+                                    Grow Your Bussines Faster
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <button type="button" class="accent-shadow">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img src="../assets/images/landing_1.png" id="splash-image" alt="Amalia G.">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="features" class="dark offset-top">
+
+                    <div class="flex-grid">
+                        <h1 class="mx-auto ex-bold">
+                            Features
+                        </h1>
+                    </div>
+
+                    <div class="flex-grid">
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle">
+                                    <i class="icon icon-refresh"></i>
+                                </span>
+                            </div>
+
+                            <h6 class="bold">Business Consulting</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle ">
+                                    <i class="icon icon-store_mall_directory"></i>
+                                </span>
+                            </div>
+                            <h6 class="bold">Market Analysis</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle">
+                                    <i class="icon icon-shopping_basket"></i>
+                                </span>
+                            </div>
+                            <h6 class="bold">User Monitoring</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex-grid">
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle">
+                                    <i class="icon icon-settings_backup_restore"></i>
+                                </span>
+                            </div>
+                            <h6 class="bold">Insurance Consulting</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle">
+                                    <i class="icon icon-smile-o"></i>
+                                </span>
+                            </div>
+                            <h6 class="bold">Customer Satisfied</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="col card">
+                            <div class="row">
+                                <span class="feature-icon circle">
+                                    <i class="icon icon-plug"></i>
+                                </span>
+                            </div>
+                            <h6 class="bold">Plug & Play</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut.
+                            </p>
+                            <a href="#" class="link bold">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="flex-grid">
+                        <div class="col padding-5">
+                            <div class="row">
+                                <div id="img-prototypes" class="width-100"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex-40 padding-5">
+                            <div class="row">
+                                <h1 class="mx-auto ex-bold">
+                                    Create interactive prototypes
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore.
+                                </p>
+
+                                <ul class="check">
+                                    <li>Excepteur sint occaecat cupidatat</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                </ul>
+
+                                <div class="card card-shadow">
+                                    <div class="flex-grid">
+                                        <div class="col flex-20">
+                                            <img src="../assets/images/person_1.jpg" alt="Amalia G."
+                                                class="circle width-100">
+                                        </div>
+
+                                        <div class="col">
+                                            <span class="ex-bold">Amalia G.</span>
+                                            <p class="bold">Co-founder XYZ Inc.</p>
+                                        </div>
+                                    </div>
+                                    <p class="italic">
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua?"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="about" class="dark offset-top">
+
+                    <div class="flex-grid">
+                        <h1 class="mx-auto ex-bold">
+                            About Us
+                        </h1>
+                    </div>
+
+                    <div class="flex-grid">
+                        <div class="col padding-5">
+                            <div class="row">
+                                <img src="../assets/images/about_1.jpg" alt="About us"
+                                    class="width-100 brd-rad-5 card-shadow">
+                            </div>
+                        </div>
+
+                        <div class="flex-40 padding-5">
+                            <h1 class="mx-auto bold">
+                                Create interactive prototypes
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <button type="button" class="accent-shadow">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+
+                </article>
+
+                <article id="testimonials" class="light offset-top">
+                    <div class="flex-grid">
+                        <h1 class="mx-auto ex-bold">
+                            Testimonials
+                        </h1>
+                    </div>
+
+                    <div>
+                        <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators" id="testimonial-indicators">
+                            </ol>
+
+                            <div class="carousel-inner" id="testimonial-items">
+                            </div>
+
+                            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="carousel-control-next" href="#testimonialsCarousel" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="contact" class="dark offset-top">
+                    <div class="flex-grid">
+                        <h1 class="mx-auto ex-bold">
+                            Get In Touch
+                        </h1>
+                    </div>
+
+                    <div class="flex-grid card width-80 mx-auto">
+
+                        <div class="flex-grid">
+                            <h3 class="bold">Contact Form</h3>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label>First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label>Email</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label>Subject</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label>Message</label>
+                                <textarea class="form-control scroll"
+                                    placeholder="Write your notes or questions here..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="button" class="accent-shadow">
+                            Send Message
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="flex-grid card">
+                <span class="mx-auto">Copyright &#9400;2019 All rights reserved</span>
+            </div>
+        </footer>
+</body>
+
+</html>
