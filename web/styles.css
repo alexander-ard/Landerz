@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    font-size: 1.2pc;
+    font-size: 0.95pc;
     overflow-x: hidden;
 }
 
@@ -13,13 +13,13 @@ footer {
 }
 
 article {
-    height: 100vh;
+    min-height: 100vh; 
     padding-left: 20vh;
     padding-right: 20vh;
 }
 
 article.no-right-padding {
-    height: 100vh;
+    min-height: 100vh; 
     padding-left: 20vh;
     padding-right: 0vh;
 }
@@ -138,7 +138,7 @@ label.required:after {
     border-radius: 10px;
     background-color: #ffffff;
     border-color: #ffffff;
-    padding: 3%;
+    padding: 2%;
 }
 
 .brd-rad-5 {
