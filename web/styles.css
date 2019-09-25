@@ -7,36 +7,9 @@ html {
 footer {
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 3.5rem;
     background-color: #efefef;
     text-align: center;
-}
-
-#content-wrap {
-    height: auto;
-    min-height: 100%;
-    padding-bottom: 2.5rem;
-}
-
-#content {
-    font-family: 'truenolight';
-    min-height: 100vh;
-}
-
-#navbar a.nav-link.active {
-    color: #00d2b5;
-}
-
-#img-prototypes {
-    background-image: url(../assets/images/do_ui_kit_download_cta_floating_devices-2x.png);
-    height: 60vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-#splash-image {
-    height: 100vh;
 }
 
 article {
@@ -91,7 +64,7 @@ ul.check li:before {
     display: table-cell;
 }
 
-button {
+.button {
     background-color: #00d2b5;
     border-radius: 120px/150px;
     color: #ffffff;
@@ -101,12 +74,18 @@ button {
     max-width: 200px;
 }
 
-button:hover {
+.button:hover {
 
     background-color: #ffffff;
     color: #00d2b5;
     border: 1px solid #00d2b5;
 }
+
+label.required:after {
+    color: rgb(189, 0, 0);
+    content: " *";
+}
+
 
 .scroll::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.085);
@@ -294,20 +273,60 @@ button:hover {
     height: 60vh;
 }
 
+#content-wrap {
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 3.5rem;
+}
+
+#content {
+    font-family: 'truenolight';
+    min-height: 100vh;
+}
+
+#navbar a.nav-link.active {
+    color: #00d2b5;
+}
+
+#img-prototypes {
+    background-image: url(../assets/images/do_ui_kit_download_cta_floating_devices-2x.png);
+    height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#splash-image {
+    height: 100vh;
+}
+
 @media (max-width: 600px) {
 
     .flex-grid {
         display: block;
     }
 
-    article {
-        height: 100vh;
+    article,
+    article.no-right-padding {
+        height: 100%;
         padding-left: 0;
         padding-right: 0;
     }
 
     .feature-icon {
         margin-left: auto;
+    }
+
+    .testimonial-body {
+        font-size: 1.2em;
+    }
+
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .super-title {
+        font-size: 2em;
     }
 
     #img-prototypes {
@@ -321,7 +340,15 @@ button:hover {
         height: 80vh;
     }
 
-    .testimonial-body {
-        font-size: 1.2em;
+    #splash-image {
+        height: 30vh;
+    }
+
+    .img-lg {
+        display: none;
+    }
+
+    .testimonial-picture {
+        width: 30%;
     }
 }

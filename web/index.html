@@ -26,11 +26,11 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="../assets/fonts/fonts/trueno/stylesheet.css" type="text/css" charset="utf-8" />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
 
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>
 
     <script type="text/javascript">
         page.load();
@@ -42,7 +42,8 @@
 
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <a class="navbar-brand" href="#">Landerz<span class="link">.</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -81,8 +82,13 @@
     <main id="content-wrap">
         <div class="content container-fluid">
             <article id="home" class="light offset-top no-right-padding">
-                <div class="flex-grid">
-                    <div class="flex-40 padding-5">
+                <div class="flex-grid flex-reverse">
+                    <div class="col">
+                        <div class="row">
+                            <img src="../assets/images/landing_1.png" id="splash-image" alt="Amalia G.">
+                        </div>
+                    </div>
+                    <div class="col flex-40 padding-5">
                         <div class="row">
                             <h1 class="mx-auto ex-bold super-title">
                                 Grow Your Bussines Faster
@@ -93,14 +99,9 @@
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
 
-                            <button type="button" class="accent-shadow">
+                            <a href="#features" class="accent-shadow button">
                                 Get Started
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
-                            <img src="../assets/images/landing_1.png" id="splash-image" alt="Amalia G.">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +217,7 @@
                 <div class="flex-grid">
                     <div class="col padding-5">
                         <div class="row">
-                            <div id="img-prototypes" class="width-100"></div>
+                            <div id="img-prototypes" class="width-100 img-lg"></div>
                         </div>
                     </div>
 
@@ -270,7 +271,7 @@
                     <div class="col padding-5">
                         <div class="row">
                             <img src="../assets/images/about_1.jpg" alt="About us"
-                                class="width-100 brd-rad-5 card-shadow">
+                                class="width-100 brd-rad-5 card-shadow img-lg">
                         </div>
                     </div>
 
@@ -283,7 +284,7 @@
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                        <button type="button" class="accent-shadow">
+                        <button type="button" class="accent-shadow button">
                             Learn More
                         </button>
                     </div>
@@ -321,59 +322,61 @@
             </article>
 
             <article id="contact" class="dark offset-top">
-                <div class="flex-grid">
-                    <h1 class="mx-auto ex-bold">
-                        Get In Touch
-                    </h1>
-                </div>
-
-                <div class="flex-grid card width-80 mx-auto">
-
+                <form>
                     <div class="flex-grid">
-                        <h3 class="bold">Contact Form</h3>
+                        <h1 class="mx-auto ex-bold">
+                            Get In Touch
+                        </h1>
                     </div>
 
-                    <div class="flex-grid">
-                        <div class="col">
-                            <label>First Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
+                    <div class="flex-grid card width-80 mx-auto">
 
-                    <div class="flex-grid">
-                        <div class="col">
-                            <label>Email</label>
-                            <input type="text" class="form-control">
+                        <div class="flex-grid">
+                            <h3 class="bold">Contact Form</h3>
                         </div>
-                    </div>
 
-                    <div class="flex-grid">
-                        <div class="col">
-                            <label>Subject</label>
-                            <input type="text" class="form-control">
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label class="required">First Name</label>
+                                <input type="text" required="required" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="flex-grid">
-                        <div class="col">
-                            <label>Message</label>
-                            <textarea class="form-control scroll"
-                                placeholder="Write your notes or questions here..."></textarea>
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label class="required">Email</label>
+                                <input type="text" required="required" class="form-control">
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="flex-grid">
-                        <div class="col">
-                            <button type="button" class="accent-shadow">
-                                Send Message
-                            </button>
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label class="required">Subject</label>
+                                <input type="text" required="required" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <label class="required">Message</label>
+                                <textarea class="form-control scroll"
+                                    placeholder="Write your notes or questions here..." required="required"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex-grid">
+                            <div class="col">
+                                <button type="submit" class="accent-shadow button">
+                                    Send Message
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </article>
         </div>
     </main>
